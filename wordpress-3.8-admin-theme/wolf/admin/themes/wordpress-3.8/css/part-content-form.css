@@ -1,0 +1,455 @@
+/* @start GENERAL FORM DESIGN */
+#main #content{
+	position: relative;
+}
+#main #content>span>a#site-view-page{
+	top: 12px;
+	left: 105px;
+	color: transparent;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	position: absolute;
+}
+#main #content>span>a#site-view-page:before{
+	color: #0074a2;
+	padding: 4px 8px;
+	display: inline-block;
+	content: "View Page";
+	font-size: 13px;
+	font-weight: 600;
+	background: #e0e0e0;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+#main #content>span>a#site-view-page:hover:before{
+	color: #fff;
+	background-color: #2EA2CC;
+}
+#main #page_edit_form{
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+#main .form-area{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background: transparent;
+}
+#main .form-area #metainfo-tabs{
+	displaY: none;
+}
+#main .form-area #metainfo-content{
+	margin: 8px 0 0 0;
+	padding: 0;
+	display: block;
+	background-color: transparent;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+#main .form-area #metainfo-content div.page{
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+#main .form-area #metainfo-content div#pagetitle{
+	float: left;
+	left: 0;
+	right: 370px;
+	position: absolute;
+}
+#main .form-area #metainfo-content div#pagetitle #div-title{
+	margin: 0;
+	padding: 0;
+}
+#main .form-area #metainfo-content div#pagetitle #div-title input{
+	padding: 3px 8px;
+	font-size: 25px;
+}
+#main .form-area #metainfo-content div#metadata,
+#main .form-area #metainfo-content div#settings{
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	display: block !important;
+	position: absolute;
+}
+#main .form-area #metainfo-content div#settings{
+	top: 390px;
+}
+#main form[action$="/1"] .form-area #metainfo-content div#settings{
+	top: 330px;
+}
+#main .form-area #metainfo-content div#metadata #div-metadata,
+#main .form-area #metainfo-content div#settings #div-settings{
+	width: 350px;
+	margin: 0;
+	padding: 0;
+	display: block !important;
+	position: relative;
+	border: 1px solid #e5e5e5;
+	background: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+#main .form-area #metainfo-content div#metadata #div-metadata:before,
+#main .form-area #metainfo-content div#settings #div-settings:before{
+	width: 350px;
+	margin: 0;
+	padding: 8px 12px;
+	display: block !important;
+	content: "Metadata";
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+#main .form-area #metainfo-content div#settings #div-settings:before{
+	content: "Settings";
+}
+#main .form-area #metainfo-content div#metadata #div-metadata table,
+#main .form-area #metainfo-content div#settings #div-settings table{
+	width: 100%;
+	display: block;
+	padding: 10px;
+	background-color: #fff;
+}
+#main .form-area #metainfo-content div#metadata #div-metadata table tr td,
+#main .form-area #metainfo-content div#settings #div-settings table tr td{
+	width: auto;
+	padding: 0;
+	display: block;
+	background-color: transparent;
+}
+#main .form-area #metainfo-content div#metadata #div-metadata table tr td textarea,
+#main .form-area #metainfo-content div#settings #div-settings table tr td textarea{
+	height: 44px;
+	resize: none;
+}
+#main .form-area #metainfo-content div#metadata #div-metadata table tr td:first-child,
+#main .form-area #metainfo-content div#settings #div-settings table tr td:first-child{
+	padding: 5px 0 0 5px;
+	text-align: left;
+	line-height: 27px;
+	font-weight: normal;
+}
+#main .form-area #metainfo-content div#metadata #div-metadata table tr:first-child td:first-child,
+#main .form-area #metainfo-content div#settings #div-settings table tr:first-child td:first-child{
+	padding: 0 0 0 5px;
+}
+#main .form-area #metainfo-content div#metadata #div-metadata table tr td:first-child label,
+#main .form-area #metainfo-content div#settings #div-settings table tr td:first-child label{
+	font-weight: normal;
+}
+#main .form-area #metainfo-content div#settings #div-settings table tr td.field label{
+	padding: 10px 5px 5px 5px;
+	display: block;
+	font-weight: normal;
+}
+#main .form-area #metainfo-content div#settings #div-settings table tr:last-child td.field label{
+	display: inline-block;
+}
+
+#main .form-area #part-tabs{
+	float: left;
+	width: 100%;
+	margin: 60px -370px -46px 0;
+	padding: 0 500px 0 0;
+	background: transparent;
+	z-index: 100;
+}
+#main .form-area #part-tabs #tab-toolbar{
+	margin: 0;
+	padding: 6px 0 0 0;
+	position: relative;
+	z-index: 100;
+}
+#main .form-area #part-tabs #tab-toolbar a{
+	text-decoration: none;
+	background: transparent;
+}
+#main .form-area #part-tabs #tab-toolbar a img{
+	display: none;
+}
+#main .form-area #part-tabs #tab-toolbar a:before{
+	font-size: 18px;
+	font-family: "dashicons";
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-image: none !important;
+	vertical-align: top;
+}
+#main .form-area #part-tabs #tab-toolbar a#add-part{
+	color: #0074A2;
+}
+#main .form-area #part-tabs #tab-toolbar a#add-part:hover{
+	color: #2EA2CC;
+}
+#main .form-area #part-tabs #tab-toolbar a#add-part:before{
+	content: "\f502";
+}
+#main .form-area #part-tabs #tab-toolbar a#delete-part{
+	color: #aa0000;
+}
+#main .form-area #part-tabs #tab-toolbar a#delete-part:hover{
+	color: #ff0000;
+}
+#main .form-area #part-tabs #tab-toolbar a#delete-part:before{
+	content: "\f153";
+}
+#main .form-area #part-tabs ul.tabNavigation{
+}
+#main .form-area #part-tabs ul.tabNavigation li.tab{
+	display: inline-block;
+}
+#main .form-area #part-tabs ul.tabNavigation li.tab a{
+	color: #888;
+	display: block;
+	position: relative;
+	background: transparent;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	z-index: 100;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+}
+#main .form-area #part-tabs ul.tabNavigation li.tab a:hover{
+	color:  #fff;
+	border-color: #2EA2CC;
+	background-color: #2EA2CC;
+}
+#main .form-area #part-tabs ul.tabNavigation li.tab a.here{
+	color:  #fff;
+	font-weight: normal;
+	border-color: #0074A2;
+	background-color: #0074A2;
+}
+
+#main .form-area #part-content{
+	float: left;
+	width: 100%;
+	margin: 15px -370px 0 0;
+	padding: 0 370px 0 0;
+	background: transparent;
+	z-index: 100;
+}
+#main .form-area #part-content .page{
+	width: 100%;
+	margin: 0 370px 0 0;
+	padding: 0;
+}
+#main .form-area #part-content .page .part{
+	display: block;
+	text-align: right;
+}
+#main .form-area #part-content .page .part label{
+	display: none;
+}
+#main .form-area #part-content .page .part div textarea{
+	height: 620px;
+	margin: 0 0 5px 0;
+	padding: 10px;
+	resize: vertical;
+}
+#main .form-area .row{
+	width: 100%;
+	clear: both;
+	display: block;
+	margin: 15px -370px 0 0;
+	padding: 0 370px 0 0;
+	background: transparent;
+	text-align: right;
+}
+#main .form-area .row p{
+	float: none;
+	margin: 0;
+	display: block;
+}
+#main .form-area .row label{
+	color: #ededed;
+	margin: 0 5px 0 0;
+	font-weight: normal;
+}
+#main .form-area .row label[for="page_status_id"]:after{
+	color: #999;
+	content: "\f173";
+	padding: 0 2px 0 5px;
+	font-size: 22px;
+	line-height: 28px;
+	font-family: "dashicons";
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-image: none !important;
+	vertical-align: top;
+}
+#main .form-area .row label[for="page_comment_status"]:after{
+	color: #999;
+	content: "\f101";
+	padding: 0 2px 0 5px;
+	font-size: 22px;
+	line-height: 28px;
+	font-family: "dashicons";
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-image: none !important;
+	vertical-align: top;
+}
+#main .form-area .row+p{
+	display: none;
+}
+#main .form-area+p.buttons{
+	margin: 0 !important;
+}
+body#body_plugin_file_manager #content-wrapper #content .form-area .content{
+	margin: 0 0 15px 0;
+	text-align: right;
+}
+body#body_plugin_file_manager #content-wrapper #content .form-area .content>label{
+	display: none;
+}
+body#body_page_edit #content-wrapper #content{
+	min-height: 935px;
+}
+/* @end GENERAL FORM DESIGN */
+
+/* @start SNIPPETS AND LAYOUT DESIGN */
+body#body_snippet_edit #content-wrapper,
+body#body_layout_edit #content-wrapper{
+	width: 100%;
+}
+body#body_snippet_edit #content-wrapper #content .form-area,
+body#body_layout_edit #content-wrapper #content .form-area{
+	display: block;
+}
+body#body_snippet_edit #content-wrapper #content .form-area h3,
+body#body_layout_edit #content-wrapper #content .form-area h3,
+body#body_layout_edit #content-wrapper #content .form-area .title label,
+body#body_snippet_edit #content-wrapper #content .form-area #pages .page p label,
+body#body_layout_edit #content-wrapper #content .form-area .content>label{
+	display: none;
+}
+body#body_snippet_edit #content-wrapper #content .form-area #meta-pages{
+	margin: 0;
+	padding: 0;
+	display: block;
+	background: transparent;
+}
+body#body_snippet_edit #content-wrapper #content .form-area #meta-pages .title input#snippet_name,
+body#body_layout_edit #content-wrapper #content .form-area .title input#layout_name{
+	width: 100%;
+	margin: 0;
+	display: block;
+	font-size: 25px;
+}
+body#body_snippet_edit #content-wrapper #content .form-area #pages{
+	padding: 15px 0;
+	background: transparent;
+}
+body#body_snippet_edit #content-wrapper #content .form-area #pages .page{
+	padding: 0;
+}
+body#body_snippet_edit #content-wrapper #content .form-area #pages .page p{
+	text-align: right;
+}
+body#body_layout_edit #content-wrapper #content .form-area table.fieldset{
+	width: 50%;
+	margin: 13px 0 3px 0;
+	padding: 0;
+	border: none;
+	float: right;
+	background: transparent;
+}
+body#body_layout_edit #content-wrapper #content .form-area table.fieldset tr td{
+	width: auto;
+	border: none;
+	background: transparent;
+}
+body#body_layout_edit #content-wrapper #content .form-area table.fieldset tr td:first-child{
+	padding: 0 20px 0 5px;
+}
+body#body_layout_edit #content-wrapper #content .form-area table.fieldset tr td:last-child{
+	padding-right: 0;
+}
+body#body_layout_edit #content-wrapper #content .form-area table.fieldset tr td label{
+	font-weight: normal;
+}
+body#body_layout_edit #content-wrapper #content .form-area .content textarea,
+body#body_snippet_edit #content-wrapper #content .form-area #pages .page textarea{
+	height: 550px;
+	padding: 10px;
+	resize: vertical;
+}
+body#body_layout_edit #content-wrapper #content .form-area .content{
+	margin-top: 0;
+}
+body#body_layout_edit #content-wrapper #content .form-area .content+p{
+	color: #999;
+	margin: 0 0 12px 0;
+	padding: 0 0 0 2px;
+	display: inline-block;
+}
+body#body_snippet_edit #sidebar-wrapper,
+body#body_layout_edit #sidebar-wrapper{
+	display: none;
+}
+/* @end SNIPPETS AND LAYOUT DESIGN */
+
+/* @start SETTINGS */
+#main #content-wrapper #content fieldset{
+	border: none;
+}
+#main #content-wrapper #content legend{
+	display: none;
+}
+#main #content-wrapper #content table.fieldset{
+	width: auto;
+	margin-top: 0;
+}
+#main #content-wrapper #content table.fieldset tbody tr:before{
+	display: none;
+}
+#main #content-wrapper #content table.fieldset tbody tr td{
+	width: auto;
+	padding: 0;
+	border: none;
+	text-align: left;
+	background: transparent;
+}
+#main #content-wrapper #content table.fieldset tbody tr td[colspan="3"] h3{
+	display: none;
+}
+#main #content-wrapper #content table.fieldset tbody tr td.label{
+	width: 200px;
+	padding: 20px 10px 20px 10px;
+	text-align: left;
+	line-height: 1.3;
+	font-weight: 600;
+	vertical-align: top;
+}
+#main #content-wrapper #content table.fieldset tbody tr td.field{
+	width: 375px;
+	margin-bottom: 9px;
+	padding: 15px 10px;
+	line-height: 1.3;
+	vertical-align: middle;
+}
+#main #content-wrapper #content table.fieldset tbody tr td.field input[type=text]{
+	width: 25em;
+	font-size: 14px;
+}
+#main #content-wrapper #content table.fieldset tbody tr td.help{
+	color: #888;
+	width: 400px;
+	padding: 5px 15px;
+	font-size: 13px;
+	font-style: italic;
+	line-height: 20px;
+}
+/* @end SETTINGS */

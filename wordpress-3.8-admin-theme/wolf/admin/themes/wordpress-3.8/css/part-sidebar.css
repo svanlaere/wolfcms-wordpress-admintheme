@@ -1,0 +1,165 @@
+#main #sidebar-wrapper{
+	float: none;
+	width: 350px;
+	min-width: 350px;
+	margin: 0;
+	padding: 60px 20px 20px 0;
+	display: table-cell;
+	border: none;
+	background: none;
+	vertical-align: top;
+}
+#main #sidebar-wrapper #sidebar>p.button{
+	float: none;
+	width: 100%;
+	height: auto;
+	margin: 0 0 15px 0;
+	padding: 0;
+	display: block;
+	position: static;
+	border: 1px solid #e5e5e5;
+	background: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#main #sidebar-wrapper #sidebar>p.button a{
+	color: #0074A2;
+	width: 100%;
+	margin: 0;
+	padding: 8px 12px;
+	display: block !important;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#main #sidebar-wrapper #sidebar>p.button a:before{
+	content: "\f111";
+	margin: 0 5px 0 0;
+	padding: 0 6px 0 0;
+	border-right: 1px solid #dadada;
+	display: inline-block;
+	font-size: 23px;
+	font-family: "dashicons";
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-image: none !important;
+	vertical-align: top;
+}
+#main #sidebar-wrapper #sidebar>p.button a:hover{
+	color: #2EA2CC;
+}
+#main #sidebar-wrapper #sidebar>p.button a img{
+	display: none;
+}
+
+/* @start BUTTON ICONS */
+body#body_plugin_file_manager #main #sidebar-wrapper #sidebar>p.button a[href="#create-file-popup"]:before{
+	content: "\f502";
+}
+body#body_plugin_file_manager #main #sidebar-wrapper #sidebar>p.button a[href="#create-directory-popup"]:before{
+	content: "\f318";
+}
+body#body_plugin_file_manager #main #sidebar-wrapper #sidebar>p.button a[href="#upload-file-popup"]:before{
+	content: "\f317";
+}
+body#body_user_index #main #sidebar-wrapper #sidebar>p.button a[href="http://localhost/wolfcms/admin/user/add"]:before{
+	content: "\f502";
+}
+/* @end BUTTON ICONS */
+
+/* @start NEW BUTTON ON SNIPPETS AND LAYOUT  */
+body#body_snippet_index #main #sidebar-wrapper #sidebar>p.button,
+body#body_layout_index #main #sidebar-wrapper #sidebar>p.button{
+	top: 54px;
+	left: 285px;
+	width: auto;
+	min-width: 0px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	position: absolute;
+	border: none;
+	background: transparent;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+body#body_layout_index #main #sidebar-wrapper #sidebar>p.button{
+	left: 275px;
+}
+body#body_snippet_index #main #sidebar-wrapper #sidebar>p.button a,
+body#body_layout_index #main #sidebar-wrapper #sidebar>p.button a{
+	color: transparent;
+	width: auto;
+	min-width: 0px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+body#body_snippet_index #main #sidebar-wrapper #sidebar>p.button a:before,
+body#body_layout_index #main #sidebar-wrapper #sidebar>p.button a:before{
+	color: #0074a2;
+	padding: 4px 8px;
+	display: inline-block;
+	position: absolute;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 600;
+	background: #e0e0e0;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+body#body_snippet_index #main #sidebar-wrapper #sidebar>p.button a:before{
+	content: "Add Snippet";
+}
+body#body_layout_index #main #sidebar-wrapper #sidebar>p.button a:before{
+	content: "Add Layout";
+}
+body#body_snippet_index #main #sidebar-wrapper #sidebar>p.button a:hover:before,
+body#body_layout_index #main #sidebar-wrapper #sidebar>p.button a:hover:before{
+	color: #fff;
+	background-color: #2EA2CC;
+}
+body#body_snippet_index #main #sidebar-wrapper #sidebar>p.button a img,
+body#body_layout_index #main #sidebar-wrapper #sidebar>p.button a img{
+	display: none;
+}
+/* @end NEW BUTTON ON SNIPPETS AND LAYOUT  */
+
+/* @start SIDEBAR WIDGETS  */
+#main #sidebar-wrapper #sidebar .box{
+	width: 100%;
+	margin: 0 0 15px 0;
+	padding: 0;
+	display: block;
+	border: none;
+	border: 1px solid #e5e5e5;
+	background: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#main #sidebar-wrapper #sidebar .box h2{
+	width: 100%;
+	margin: 0;
+	padding: 8px 12px;
+	display: block !important;
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+#main #sidebar-wrapper #sidebar .box p{
+	margin: 0;
+	padding: 10px;
+}
+/* @end SIDEBAR WIDGETS  */

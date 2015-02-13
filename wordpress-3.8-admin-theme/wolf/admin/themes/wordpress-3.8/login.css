@@ -1,0 +1,126 @@
+/*
+ *	WORDPRESS 3.8 BACK-END DESIGN FOR WOLF CMS 0.8.1
+ *	@version	0.1.0-alpha
+ *
+ *	@author		SamBrishes <pytes@gmx.net>
+ *	@authorURL	http://wolfcms.pytes.net
+ */
+
+@import url("css/part-wp-dashicons.css");
+@import url("css/part-wp-forms.css");
+
+*, *:before, *:after{
+	text-shadow: none !important;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+html, body{
+	color: #343434;
+	height: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", "Calibri", Arial, sans-serif;
+	background-color: #ededed;
+}
+a{
+	color: #0074A2;
+	text-decoration: none;
+}
+a:hover{
+	color: #2EA2CC;
+	text-decoration: none;
+}
+h1{
+	margin: 50px 0 5px 0;
+	font-size: 20px;
+	text-align: center;
+	font-weight: normal;
+}
+p{
+	margin: 0 0 15px 0;
+}
+p:last-child{
+	margin: 0;
+}
+
+#dialog{
+	width: 320px;
+	margin: auto;
+	padding: 0px 0px;
+}
+#dialog form{
+	margin: 20px 0 0 0;
+	padding: 26px 24px 46px 24px;
+	font-weight: 400;
+	overflow: hidden;
+	background: none repeat scroll 0% 0% #FFF;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.13);
+}
+#dialog form div#login-username-div,
+#dialog form div#login-password-div{
+	margin: 0;
+	padding: 0;
+	display: block;
+	line-height: 1.5;
+}
+#dialog form div#login-username-div label,
+#dialog form div#login-password-div label{
+	color: #777;
+	margin: 0;
+	padding: 0;
+	display: block;
+	font-size: 14px;
+}
+#dialog form div#login-username-div input,
+#dialog form div#login-password-div input{
+	width: 100%;
+	margin: 2px 6px 16px 0px;
+	padding: 3px;
+	font-size: 24px;
+	background: none repeat scroll 0% 0% #FBFBFB;
+}
+#dialog form div.clean+div{
+	margin: 0 !important;
+}
+#dialog form div label[for="login-remember-me"]{
+	color: #777;
+	font-size: 12px;
+	line-height: 19px;
+}
+#dialog form div input#login-remember-me{
+	margin: 1px 2px 0 0;
+}
+#dialog form div#login_submit{
+	margin: 10px 0 0 0;
+	text-align: right;
+}
+#dialog form div#login_submit span{
+	float: left;
+	color: #777;
+	font-size: 12px;
+	line-height: 30px;
+}
+#dialog form div#login_submit input{
+}
+#dialog+p{
+	color: #777;
+	margin: 10px 0 0 0;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+}
+#dialog .message{
+	font-size: 13px;
+	line-height: 19px;
+	font-weight: normal;
+}
+#dialog .message#error{
+	color: #ff0000;
+}
+#dialog .message#success{
+	color: #051;
+}

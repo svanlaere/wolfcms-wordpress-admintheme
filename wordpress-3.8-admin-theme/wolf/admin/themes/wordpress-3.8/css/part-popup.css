@@ -1,0 +1,95 @@
+#boxes div.window{
+	top: 150px !important;
+	position: fixed !important;
+	z-index: 9999;
+	border: 1px solid #e5e5e5;
+	background: #fff;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+#boxes div.window .titlebar{
+	color: #343434;
+	margin: 0;
+	padding: 10px;
+	border-bottom: 1px solid #e5e5e5;
+	background: #fff;
+	font-size: 16px;
+	text-shadow: none;
+}
+#boxes div.window .titlebar a.close{
+	display: inline-block;
+}
+#boxes div.window .titlebar a.close:before{
+	color: #aaa;
+	content: "\f153";
+	display: inline-block;
+	font-size: 20px;
+	line-height: 20px;
+	font-family: "dashicons";
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	vertical-align: top;
+}
+#boxes div.window .titlebar a.close:hover:before{
+	color: #ff0000;
+}
+#boxes div.window .titlebar a.close img{
+	display: none;
+}
+#boxes div.window .content{
+	display: block;
+}
+#boxes div.window .content #upload_overwrite{
+	margin: 0 0 2px 7px;
+}
+
+#popups .popup{
+	top: 100px !important;
+	left: 350px !important;
+	max-width: 360px;
+	z-index: 9999;
+	position: fixed !important;
+	border: 1px solid #e0e0e0;
+	background: #fff;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	box-shadow: 0 1px 2px 2px #efefef;
+	-moz-box-shadow: 0 1px 2px 2px #efefef;
+	-webkit-box-shadow: 0 1px 2px 2px #efefef;
+}
+#popups .popup h3{
+	font-weight: normal;
+}
+
+body div.message{
+	color: #fff !important;
+	left: 160px !important;
+	width: auto !important;
+	max-width: 500px !important;
+	height: 32px !important;
+	margin: 0 auto !important;
+	padding: 0 20px !important;
+	position: absolute !important;
+	z-index: 9999 !important;
+	text-align: left !important;
+	font-size: 13px !important;
+	line-height: 32px !important;
+	box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+}
+body div.message#success{
+	background-color: #7ad03a !important;
+}
+body div.message#error{
+	background-color: #dd3d36 !important;
+}
