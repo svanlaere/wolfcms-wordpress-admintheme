@@ -6,32 +6,8 @@
  *	@authorURL	http://wolfcms.pytes.net
  */
 
-@import url("css/part-wp-dashicons.css");
-@import url("css/part-wp-forms.css");
+@import url("styles.css");
 
-*, *:before, *:after{
-	text-shadow: none !important;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-}
-html, body{
-	color: #343434;
-	height: 100%;
-	min-height: 100%;
-	margin: 0;
-	padding: 0;
-	font-family: "Open Sans", "Calibri", Arial, sans-serif;
-	background-color: #ededed;
-}
-a{
-	color: #0074A2;
-	text-decoration: none;
-}
-a:hover{
-	color: #2EA2CC;
-	text-decoration: none;
-}
 h1{
 	margin: 50px 0 5px 0;
 	font-size: 20px;

@@ -1,0 +1,75 @@
+/*
+ *	WORDPRESS 3.8 ADMIN THEME
+ *	@version	0.2.0-alpha
+ *
+ *	@author		SamBrishes <pytes@gmx.net>
+ *	@authorURL	http://wolfcms.pytes.net
+ *
+ *	@requires	Wolf CMS 0.8.1 or 0.8.2
+ */
+
+/*
+ *	PLEASE, DON'T EDIT THIS FILE
+ *	Unless you know what you're doing!
+ */
+
+/* 
+ *	IMPORT FONTS
+ */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic");
+@import url("css/part-wp-dashicons.css");
+
+/*
+ *	IMPORT THE DESIGN
+ */
+@import url("css/part-forms.css");
+@import url("css/part-editor.css");
+
+@import url("css/part-elements.css");
+@import url("css/part-content.css");
+@import url("css/part-content-form.css");
+
+@import url("css/part-plugins.css");
+
+/* ONLY A SMART TEST! */
+@import url("css/part-responsive.css");
+
+/*
+ *	SOME GENERAL STUFF
+ */
+*, *:before, *:after{
+	text-shadow: none !important;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+*:before, *:after{
+	font-weight: normal !important;
+}
+html, body{
+	color: #444444;
+	width: 100%;
+	min-width: 600px;
+	height: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	line-height: 1.4em;
+	background-color: #f1f1f1;
+}
+html, body, input, textarea, select{
+	font-family: "Open Sans", "Calibri", Arial, sans-serif !important;
+}
+.hidden{ display: none; }
+.clear{ font-size: 1px; clear: both; }
+.warning{ color: #dd0000; }
+.handle{ display: none; cursor: move; }
+.handle_copy{ display: none; cursor: move; }
+.handle_reorder{ display: none; cursor: move; }
+#mask{
+	display:none;
+	z-index:9000;
+	position:absolute;
+	background-color:#000;
+}

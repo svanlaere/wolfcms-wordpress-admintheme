@@ -1,0 +1,172 @@
+/*
+ *	WORDPRESS 3.8 ADMIN THEME
+ *	@version	0.2.0-alpha
+ */
+
+/*
+ *	COLOR SHEME
+ *	https://codex.wordpress.org/Function_Reference/register_admin_color_schemes
+ *
+ *	WHATEVER		#46403C		rgb(70, 64, 60)
+ *	WHATEVER		#59524C		rgb(89, 82, 76)
+ *	WHATEVER		#C7A589		rgb(199, 165, 137)
+ *	GREEN?			#9EA476		rgb(158, 164, 118)
+ */
+
+/* @start LINK COLOR */
+a, a:visited,
+.index .node a, .index .node a:visited,
+ul.index li.node a, ul.index li.node a:visited,
+table.index tbody tr td a:hover, table.index tbody tr td a:visited,
+#site-map-root .page a .title, #site-map .page a .title, #site-map .node .page a:visited .title{
+	color: #59524C;
+	text-decoration: none;
+}
+a:hover, a:active, a:visited:hover,
+.index .node a:hover, .index .node a:active, .index .node a:visited:hover,
+ul.index li.node a:hover, ul.index li.node a:active, ul.index li.node a:visited:hover,
+table.index tbody tr td a:hover, table.index tbody tr td a:active, table.index tbody tr td a:visited:hover,
+#sidebar-wrapper #sidebar>p.button a:hover, #sidebar-wrapper #sidebar>p.button a:active, #sidebar-wrapper #sidebar>p.button a:visited:hover, 
+#site-map-root .node .page a:hover .title, #site-map .node .page a:hover .title, #site-map .node .page a:visited:hover .title,
+#site-map-root .node .page a:active .title, #site-map .node .page a:active .title, #site-map .node .page a:active .title{
+	color: #C7A589;
+	text-decoration: none;
+}
+a:focus,
+.index .node a:focus,
+ul.index li.node a:focus,
+table.index tbody tr td a:focus,
+#sidebar-wrapper #sidebar>p.button a:focus,
+#site-map-root .page a:focus .title, #site-map .page a:focus .title, #site-map .node .page a:focus .title{
+	color: #C7A589;
+	text-decoration: none;
+}
+/* @end LINK COLOR */
+ 
+/* @start COLOR SITEMAP ICONS */
+.index .node a:hover:before,
+ul.index li.node:hover:before,
+div#plugins table.index tbody tr td.website a:hover:before,
+table.index#files-list tbody tr td:last-child>a:hover:first-child:before,
+ul#site-map-root>li>div.page:hover>span:before,
+ul#site-map li div.content-children:hover:before,
+ul#site-map-root>li>div.view-page a:hover:before,
+ul#site-map li div.content-children>div.view-page a:hover:before,
+ul#site-map li div.content-children>div.modify a:last-child:hover:before,
+ul#site-map-root>li>div.status.published-status,
+ul#site-map li div.content-children>div.status.published-status,
+.form-area #part-tabs #tab-toolbar a#add-part:hover{
+	color: #59524C;
+}
+/* @start COLOR SITEMAP ICONS */
+
+/* @start FORM COLORS */
+input[type=text]:focus, input[type=password]:focus,
+input[type=search]:focus, input[type=number]:focus,
+select:focus, textarea:focus{
+	border-color: #59524C !important;
+	box-shadow: 0 0 2px rgba(89, 82, 76, 0.75) !important;
+	-moz-box-shadow: 0 0 2px rgba(89, 82, 76, 0.75) !important;
+	-webkit-box-shadow: 0 0 2px rgba(89, 82, 76, 0.75) !important;
+}
+input[type="checkbox"]:checked:before{
+	color: #59524C;
+}
+input[type="radio"]:checked:before{
+	background-color: #59524C;
+}
+input[type="button"], input[type="submit"], button{
+ 	color: #fff;
+	background: #59524C;
+	border-color: #46403C;
+}
+input[type="button"]:hover, input[type="submit"]:hover,
+input[type="button"]:focus, input[type="submit"]:focus,
+button:hover, button:focus{
+	color: #fff;
+	background: #46403C;
+	border-color: #383330;
+}
+input[type="button"]:active, input[type="submit"]:active,
+button:active, button:active{
+	color: rgba(255, 255, 255, 0.8);
+	background: #46403C;
+	border-color: #383330;
+}
+input[type="button"]:disabled, input[type="submit"]:disabled,
+button:disabled, button:disabled{
+	color: rgba(255, 255, 255, 0.5) !important;
+	background: #59524C !important;
+	border-color: #46403C !important;
+}
+/* @end FORM COLORS */
+
+/* @start HEADER ELEMENTS */
+#header{
+	background: #59524C;
+}
+#header #site-title a{
+	color: #fff;
+}
+#header #site-title a:before{
+	color: #e5e5e5;
+}
+#header #site-title a:hover{
+	color: #fff;
+	background: #46403C;
+}
+#header #site-title a:hover:before{
+	color: #fff;
+}
+#header #mainTabs,
+#header #mainTabs ul,
+#header #mainTabs ul li{
+	background: #59524C;
+}
+#header #mainTabs ul li a{
+	color: #fff;
+}
+#header #mainTabs ul li a:before{
+	color: #e5e5e5;
+}
+#header #mainTabs ul li a:hover{
+	color: #fff;
+	background: #C7A589;
+}
+#header #mainTabs ul li a:hover:before{
+	color: #fff;
+}
+#header #mainTabs ul li a.current,
+#header #mainTabs ul li a.current:before{
+	color: #fff;
+	background-color: #9EA476;
+}
+/* @end HEADER ELEMENTS */
+
+/* @start FOOTER ELEMENTS */
+#footer #site-links{
+	color: #59524C;
+}
+#footer #site-links a{
+	color: #fff;
+}
+#footer #site-links a:before{
+	color: #e5e5e5;
+}
+#footer #site-links a:hover{
+	color: #fff;
+	background: #46403C;
+}
+#footer #site-links a:hover:before{
+	color: #fff;
+}
+/* @end FOOTER ELEMENTS */
+
+/* @start COMMENT PLUGIN */
+#header #mainTabs ul li a span#comment-badge{
+	background-color: #9EA476;
+}
+ol#comments li div.infos a:first-child:hover:before{
+	color: #59524C;
+}
+/* @end COMMENT PLUGIN */

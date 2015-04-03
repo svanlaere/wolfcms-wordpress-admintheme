@@ -1,97 +1,33 @@
 /*
- *	WORDPRESS 3.8 BACK-END DESIGN FOR WOLF CMS 0.8.1
- *	@version	0.1.0-alpha
+ *	WORDPRESS 3.8 ADMIN THEME
+ *	@version	0.2.0-alpha
  *
  *	@author		SamBrishes <pytes@gmx.net>
  *	@authorURL	http://wolfcms.pytes.net
+ *
+ *	@requires	Wolf CMS 0.8.1 or 0.8.2
  */
+ 
+/*
+ *	DON'T EDIT THE FOLLOWING LINE
+ */
+@import url("loader.css");
 
 /*
- *	IMPORT GOOGLE FONT
- *	@notice		The same Font which is used by WordPress >= 3.8!
- *	@copyright	Copyright © Steve Matteson
+ *	CONFIGURE THE ADMIN COLOR SHEME
+ *
+ *	To change the admin color sheme replace the text after the
+ *	following "@import" rule into one of the following values:
+ *
+ *	Default Color Sheme:		url("css/color/default.css");
+ *	Light Color Sheme:			url("css/color/light.css");
+ *	Blue Color Sheme:			url("css/color/blue.css");
+ *	Coffee Color Sheme:			url("css/color/coffee.css");
+ *	Sunrise Color Sheme:		url("css/color/sunrise.css");
+ *	Ectoplasm Color Sheme:		url("css/color/ectoplasm.css");
+ *	Midnight Color Sheme:		url("css/color/midnight.css");
+ *	Ocean Color Sheme:			url("css/color/ocean.css");
  */
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600");
-
-/*
- *	IMPORT DASHICON FONT (1.04)
- *	@notice		The same Icon Font which is used by WordPress >= 3.8!
- *	@copyright	Copyright © WordPress
- */
-@import url("css/part-wp-dashicons.css");
-
-/*
- *	IMPORT WORDPRESS FORM AND BUTTON SET
- *	@notice		Adapted to the Wolf CMS.
- *	@copyright	Copyright © WordPress
- */
-@import url("css/part-wp-forms.css");
-
-/*
- *	IMPORT THE DESIGN
- *	@author		SamBrishes <pytes@gmx.net>
- *	@copyright	Copyright © SamBrishes
- */
-@import url("css/part-header.css");
-@import url("css/part-content.css");
-@import url("css/part-content-form.css");
-@import url("css/part-content-tables.css");
-@import url("css/part-sidebar.css");
-@import url("css/part-popup.css");
-@import url("css/part-footer.css");
-
-/*
- *	IMPORT EDITOR DESIGNS
- *	@author		SamBrishes <pytes@gmx.net>
- *	@copyright	Copyright © SamBrishes
- */
-@import url("css/part-editor-markdown.css");
-@import url("css/part-editor-textile.css");
-
-/*
- *	GENERAL SETTINGS
- *	@notice		The Background-Color is a little bit darker.
- *	@author 	SamBrishes
- */
-*, *:before, *:after{
-	text-shadow: none !important;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-}
-*:before, *:after{
-	font-weight: normal !important;
-}
-html, body{
-	color: #343434;
-	height: 100%;
-	min-height: 100%;
-	margin: 0;
-	padding: 0;
-	font-family: "Open Sans", "Calibri", Arial, sans-serif;
-	background-color: #ededed;
-}
-
-/*
- *	FONT SETTINGS
- *	@notice		If you want to use a other Font.
- */
-html, body,
-#main .form-area #metainfo-content div#pagetitle #div-title input,
-#main .form-area #part-content .page .part div textarea,
-body#body_snippet_edit #content-wrapper #content .form-area #meta-pages .title input#snippet_name,
-body#body_layout_edit #content-wrapper #content .form-area .title input#layout_name,
-body#body_snippet_index #main #sidebar-wrapper #sidebar>p.button a:before,
-body#body_layout_index #main #sidebar-wrapper #sidebar>p.button a:before{
-	font-family: "Open Sans", "Calibri", Arial, sans-serif !important;
-}
-
-/*
- *	HIDE GRAVATARS
- *	@notive		
- */
-#body_user_index #content-wrapper #content table#users td.user img{
-	display: none;
-}
+@import url("css/color/midnight.css");
 
 /* END :3 - Thanks for Using <3 */
