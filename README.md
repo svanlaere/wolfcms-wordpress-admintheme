@@ -1,7 +1,8 @@
 WordPress 3.8 AdminTheme
 ===========================
->	Version: 0.2.0 Alpha<br />
->	Author: SamBrishes <pytes@gmx.net>
+>	Status: Alpha<br />
+>	Version: 0.2.0<br />
+>	Author: SamBrishes, pytesNET
 
 The WordPress 3.8 AdminTheme gives the admin area of the Content Management System 
 *[Wolf CMS](https://github.com/wolfcms/wolfcms)* (version 0.8.1 / 0.8.2) a "WordPress Backend" 
