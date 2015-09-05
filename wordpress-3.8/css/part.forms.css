@@ -1,0 +1,255 @@
+/*
+ |	A WordPress like AdminTheme for the Wolf
+ |	@file		./css/part.forms.css
+ |	@author		SamBrishes <pytes@gmx.net>
+ |	@version	0.3.0 [0.2.0] - Alpha
+ |
+ |	@require	Wolf CMS 0.8.3, CSS3-capable Browser
+ */
+/* @start GENERAL FORM DESIGN */
+label{
+	cursor: pointer;
+	font-weight: normal !important;
+}
+input, button, select, textarea{
+	color: #333;
+	margin: 1px 2px 2px 1px;
+	padding: 3px 5px;
+	font-family: inherit;
+	font-size: 14px !important;
+	font-weight: inherit;
+	border: 1px solid #cacaca;
+	outline: none;
+	background-color: #fff;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+input[type="search"]{
+	-webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration{
+	display: none;
+}
+input[type="number"]{
+	width: 75px;
+}
+input[type="file"]{
+	height: 26px;
+	padding: 1px;
+}
+select{
+	height: 26px;
+	padding: 1px 5px;
+}
+select[multiple]{
+	min-height: 75px;
+}
+select option, select optgroup{
+	color: #333;
+}
+select:disabled option, select[readonly] option,
+select:disabled optgroup, select[readonly] optgroup{
+	color: #888;
+}
+select option:disabled{
+	color: #bbb;
+}
+textarea{
+	min-height: 65px;
+	resize: vertical;
+	overflow: auto;
+	padding: 3px 5px !important;
+	line-height: 1.4;
+}
+input:hover, select:hover, textarea:hover{
+	border-color: #b8b8b8;
+}
+input:disabled, button:disabled, select:disabled, textarea:disabled,
+input[readonly], select[readonly], textarea[readonly],
+input[readonly]:focus, select[readonly]:focus, textarea[readonly]:focus{
+	color: #aaa;
+	border-color: #dadada !important;
+	background-color: #f6f6f6;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+}
+input[readonly], select[readonly], textarea[readonly]{
+	background-color: #f0f0f0;
+}
+/* @end GENERAL FORM DESIGN */
+
+/* @start CHECKBOX AND RADIO BUTTONS */
+input[type="checkbox"], input[type="radio"]{
+	clear: none;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	margin: 0 1px 4px 4px;
+	padding: 0 !important;
+	display: inline-block;
+	text-align: center;
+	line-height: 0;
+	vertical-align: middle;
+	-webkit-appearance: none;
+}
+input[type="radio"]{
+	line-height: 10px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+input[type="checkbox"]:checked:before, input[type="radio"]:checked:before{
+	float: left;
+	width: 16px;
+	display: inline-block;
+	font-size: 21px;
+	line-height: 1px;
+	vertical-align: middle;
+	font-family: "dashicons";
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+input[type="checkbox"]:checked:before{
+	margin: 7px 0 0 -4px;
+	content: "\f147";
+}
+input[type="radio"]:checked:before{
+	width: 6px;
+	height: 6px;
+	margin: 4px;
+	content: "\2022";
+	text-indent: -9999px;
+	font-size: 24px;
+	line-height: 16px;
+	border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+}
+input[type="checkbox"]:disabled, input[type="radio"]:disabled{
+	background-color: #f0f0f0;
+}
+input[type="checkbox"]:disabled, input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled, input[type="radio"]:disabled + label{
+	color: #aaa;
+	cursor: default;
+}
+input[type="checkbox"]:disabled:checked:before, input[type="radio"]:disabled:checked:before{
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+}
+/* @end CHECKBOX AND RADIO BUTTONS */
+
+/* @start BUTTON DESIGN */
+input[type="submit"], input[type="button"],
+button, input[type="reset"], p.buttons a, #content>span>a#site-view-page,
+body#body_plugin_comment .pagination span, body#body_plugin_comment .pagination a{
+	cursor: pointer;
+	margin: 1px 2px 2px 0;
+	padding: 0 10px 1px 10px;
+	display: inline-block;
+	font-size: 13px !important;
+	line-height: 26px;
+	text-decoration: none;
+	border-color: transparent;
+	white-space: nowrap;
+	-webkit-appearance: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+input[type="submit"], input[type="button"]{
+ 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 0 rgba(0, 0, 0, 0.15);
+ 	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 0 rgba(0, 0, 0, 0.15);
+ 	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+input[type="submit"]:hover, input[type="submit"]:focus,
+input[type="button"]:hover, input[type="button"]:focus{
+ 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+ 	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+ 	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+input[type="submit"]:active, input[type="button"]:active{
+ 	vertical-align: top;
+ 	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
+ 	-moz-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
+ 	-webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+input[type="submit"]:disabled, input[type="button"]:disabled{
+	cursor: default;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1) !important;
+	box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+button, input[type="reset"], p.buttons a, #content>span>a#site-view-page,
+body#body_plugin_comment .pagination span, body#body_plugin_comment .pagination a{
+	color: #555 !important;
+	border: 1px solid #cccccc;
+	background: #ffffff;
+ 	vertical-align: top;
+	box-shadow: inset 0 1px 0 #fff, 0 1px 0 rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: inset 0 1px 0 #fff, 0 1px 0 rgba(0, 0, 0, 0.08);
+	-webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+button:hover, button:focus, input[type="reset"]:hover, input[type="reset"]:focus,
+p.buttons a:hover, p.buttons a:focus,
+#content>span>a#site-view-page:hover, #content>span>a#site-view-page:focus,
+body#body_plugin_comment .pagination span:hover, body#body_plugin_comment .pagination span:focus, 
+body#body_plugin_comment .pagination a:hover, body#body_plugin_comment .pagination a:focus{
+	color: #222 !important;
+	background: #ffffff;
+	border-color: #b0b0b0!important;
+	box-shadow: inset 0 1px 0 #fff, 0 1px 0 rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: inset 0 1px 0 #fff, 0 1px 0 rgba(0, 0, 0, 0.08);
+	-webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+button:active, input[type="reset"]:active, p.buttons a:active, #content>span>a#site-view-page:active,
+body#body_plugin_comment .pagination a:active, body#body_plugin_comment .pagination span.current{
+	color: #333 !important;
+	background: #e4e4e4;
+	border-color: #b0b0b0 !important;
+ 	box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5);
+ 	-moz-box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5);
+ 	-webkit-box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5);
+}
+button:disabled, input[type="reset"]:disabled, p.buttons a.disabled,
+body#body_plugin_comment .pagination span.disabled{
+	color: #aaa !important;
+	cursor: default;
+	border-color: #ccc !important;
+	background: #f0f0f0 !important;
+	box-shadow: inset 0 1px 0 #fff, 0 1px 0 rgba(0, 0, 0, 0.08) !important;
+	-moz-box-shadow: inset 0 1px 0 #fff, 0 1px 0 rgba(0, 0, 0, 0.08) !important;
+	-webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 0 rgba(0, 0, 0, 0.08) !important;
+}
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner{
+	padding: 0;
+	border: 0;
+}
+/* @end BUTTON DESIGN */
+
+/* @start WOLF ADJUSTMENTS */
+.textbox{
+	width: 325px !important;
+}
+#content textarea:hover{
+	border-color: #b8b8b8;
+}
+#main .buttons{
+	margin: 15px 0;
+}
+#main .buttons input{
+	margin-right: 5px;
+}
+/* @end WOLF ADJUSTMENTS */

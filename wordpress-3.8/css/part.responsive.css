@@ -1,0 +1,120 @@
+/*
+ |	A WordPress like AdminTheme for the Wolf
+ |	@file		./css/part.responsive.css
+ |	@author		SamBrishes <pytes@gmx.net>
+ |	@version	0.3.0 [0.2.0] - Alpha
+ |
+ |	@require	Wolf CMS 0.8.3, CSS3-capable Browser
+ */
+/*
+ |	EXPERIMENTAL RESPONSIVE TEST
+ */
+@media screen and (max-width: 950px){
+	/* @start HEADER */
+	#header #site-title a{
+		width: 50px;
+		min-width: 50px;
+		max-width: 50px;
+		font-size: 0;
+	}
+	#header #mainTabs{
+		width: 50px;
+	}
+	#header #mainTabs ul li{
+		width: 50px;
+		position: relative;
+	}
+	#header #mainTabs ul li#snippet-plugin, 
+	#header #mainTabs ul li.right,
+	#header #mainTabs ul li#file_manager-plugin{
+		margin: 0;
+	}
+	#header #mainTabs ul li a{
+		width: auto;
+		min-width: auto;
+		height: 34px;
+		padding: 0 10px 0 60px;
+		position: absolute;
+		visibility: hidden;
+		white-space: nowrap;
+		vertical-align: top;
+	}
+	#header #mainTabs ul li a:before{
+		left: 0;
+		width: 50px;
+		position: absolute;
+	}
+	#header #mainTabs ul li a:before,
+	#header #mainTabs ul li a:after{
+		visibility: visible;
+	}
+	#header #mainTabs ul li a.current:after{
+		left: 35px;
+		right: auto;
+	}
+	#header #mainTabs ul li a.current:hover:after{
+		display: none;
+	}
+	#header #mainTabs ul li a:hover{
+		visibility: visible;
+	}
+	/* @end HEADER */
+	
+	/* @start CONTENT + SIDEBAR */
+	#main{
+		padding: 32px 0 0 50px;
+		display: block;
+	}
+	#main #content-wrapper{
+		display: block;
+	}
+	#main #sidebar-wrapper{
+	    float: none;
+		width: 100%;
+		margin: 0;
+		padding: 10px 22px 15px 22px;
+		display: block;
+	}
+	#sidebar-wrapper #sidebar{
+	}
+	#sidebar-wrapper #sidebar>p.button{
+		display: block;
+	}
+	#sidebar-wrapper #sidebar>p.button>a{
+		overflow: hidden;
+		text-align: left;
+	}
+	#sidebar-wrapper #sidebar>p.button>a:before{
+		width: 40px;
+		border: none;
+		margin: 0 0 0 -2px;
+		padding: 0;
+		text-align: center;
+	}
+	/* @end CONTENT + SIDEBAR */
+	
+	/* @start ELEMENTS */
+	div.message, div.message#info, 
+	div.message#error, div.message#success{
+		left: 50px;
+	}
+	/* @end ELEMENTS */
+	
+	/* @start PLUGINS */
+	#header #mainTabs ul li a span#comment-badge{
+		display: none;
+	}
+	/* @end PLUGINS */
+	
+	/* @start FOOTER */
+	#footer{
+		height: auto;
+		margin: 0;
+	}
+	#footer p:first-child, #footer p.stats{
+		float: none;
+		displaY: block;
+		text-align: center;
+	}
+	/* @end FOOTER */
+}

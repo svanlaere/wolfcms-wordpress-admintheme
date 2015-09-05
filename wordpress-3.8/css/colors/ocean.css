@@ -1,0 +1,139 @@
+/*
+ |	A WordPress like AdminTheme for the Wolf
+ |	@file		./css/colors/ocean.css
+ |	@author		SamBrishes <pytes@gmx.net>
+ |	@version	0.3.0 [0.2.0] - Alpha
+ |
+ |	@require	Wolf CMS 0.8.3, CSS3-capable Browser
+ */
+/*
+ |	COLOR SCHEME @ codex.wordpress.org/Function_Reference/register_admin_color_schemes
+ |
+ |	BLUE?		#627C83		rgb(98, 124, 131)
+ |	BLUE?		#738E96		rgb(115, 142, 150)
+ |	BLUE?		#9EBAA0		rgb(158, 183, 160)
+ |	BROWN?		#AA9D88		rgb(170, 157, 136)
+ */
+ 
+/* @start GENERAL */
+a, a:visited{
+	color: #AA9D88 !important;
+}
+a:hover, a:active, a:visited:hover{
+	color: #9EBAA0 !important;
+}
+input:focus, select:focus, textarea:focus{
+	border-color: #738E96 !important;
+	box-shadow: 0 0 2px rgba(115, 142, 150, 0.75) !important;
+	-moz-box-shadow: 0 0 2px rgba(115, 142, 150, 0.75) !important;
+	-webkit-box-shadow: 0 0 2px rgba(115, 142, 150, 0.75) !important;
+}
+input[type="checkbox"]:checked:before{
+	color: #738E96;
+}
+input[type="radio"]:checked:before{
+	background-color: #738E96;
+}
+input[type="button"], input[type="submit"]{
+ 	color: #fff;
+	background: #9EBAA0;
+	border-color: #738E96;
+}
+input[type="button"]:hover, input[type="submit"]:hover,
+input[type="button"]:focus, input[type="submit"]:focus{
+	color: #fff;
+	background: #738E96;
+	border-color: #627C83;
+}
+input[type="button"]:active, input[type="submit"]:active{
+	color: rgba(255, 255, 255, 0.8);
+	background: #738E96;
+	border-color: #627C83 !important;
+}
+input[type="button"]:disabled, input[type="submit"]:disabled{
+	color: rgba(255, 255, 255, 0.5) !important;
+	background: #9EBAA0 !important;
+	border-color: #738E96 !important;
+}
+/* @end GENERAL */
+
+/* @start HEADER, NAV, SITE-LINKS */
+#header,
+#header #mainTabs,
+#header #mainTabs ul,
+#header #mainTabs ul li{
+	background: #738E96;
+}
+#header #site-title a:before,
+#header #mainTabs ul li a:before,
+#footer #site-links a:before{
+	color: #e5e5e5;
+}
+#header #site-title a,
+#header #mainTabs ul li a,
+#footer #site-links a{
+	color: #fff !important;
+}
+#header #site-title a:hover,
+#header #mainTabs ul li a:hover,
+#footer #site-links a:hover{
+	color: #9EBAA0 !important;
+	background: #627C83;
+}
+#header #site-title a:hover:before,
+#header #mainTabs ul li a:hover:before,
+#footer #site-links a:hover:before{
+	color: #9EBAA0;
+}
+#header #mainTabs ul li a.current,
+#header #mainTabs ul li a.current:before{
+	color: #fff !important;
+	background: #9EBAA0;
+}
+/* @end HEADER, NAV, SITE-LINKS */
+
+/* @start ADJUSTMENTS */
+.tabs ul.tabNavigation li a:hover,
+.tabs ul.tabNavigation li.tab a:hover{
+	color: #9EBAA0 !important;
+}
+.tabs ul.tabNavigation li a.here,
+.tabs ul.tabNavigation li.tab a.here{
+	color: #AA9D88 !important;
+}
+#sidebar p.button a:hover,
+.form-area #part-tabs ul.tabNavigation li.tab a:hover{
+	color: #9EBAA0 !important;
+}
+index .node a:hover:before,
+ul.index li.node:hover:before,
+table.index tbody tr:hover:before,
+div#plugins table.index tbody tr td.website a:hover:before,
+ul#site-map-root>li>div.page:hover>span:before,
+ul#site-map li div.content-children:hover:before,
+ul#site-map-root>li>div.view-page a:hover:before,
+ul#site-map li div.content-children>div.view-page a:hover:before,
+ul#site-map li div.content-children>div.modify a:last-child:hover:before{
+	color: #9EBAA0 !important;
+}
+/* @end ADJUSTMENTS */
+
+/* @start PLUGINS */
+ol#comments li:hover:before,
+table.index#files-list tbody tr td:last-child>a:hover:first-child:before{
+	color: #9EBAA0 !important;
+}
+#header #mainTabs ul li a span#comment-badge:before,
+#header #mainTabs ul li a span#comment-badge:after,
+#header #mainTabs ul li a span#comment-badge{
+	background-color: #AA9D88;
+}
+#header #mainTabs ul li a.current span#comment-badge:before,
+#header #mainTabs ul li a.current span#comment-badge:after,
+#header #mainTabs ul li a.current span#comment-badge{
+	background-color: #9EBAA0;
+}
+ol#comments li div.infos a:first-child:hover:before{
+	color: #AA9D88;
+}
+/* @end PLUGINS */

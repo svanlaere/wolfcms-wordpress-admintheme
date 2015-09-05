@@ -1,0 +1,690 @@
+/*
+ |	A WordPress like AdminTheme for the Wolf
+ |	@file		./css/part.content-forms.css
+ |	@author		SamBrishes <pytes@gmx.net>
+ |	@version	0.3.0 [0.2.0] - Alpha
+ |
+ |	@require	Wolf CMS 0.8.3, CSS3-capable Browser
+ */
+/* @start FORM CONTENT */
+#content>span>a#site-view-page{
+	margin: 6px 2px 0 0;
+	display: block !important;
+}
+#page_edit_form{
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+.form-area{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background: transparent;
+}
+.form-area h3, .form-area .title label,
+.form-area #pages .page p label, .form-area .content>label{
+	display: none;
+}
+.form-area label{
+	font-weight: normal;
+}
+.form-area #metainfo-tabs{
+	width: 350px;
+	right: 0;
+	margin: 135px 0 0 0;
+	padding: 0;
+	display: inline-block;
+	z-index: 100;
+	position: absolute;
+}
+.form-area #metainfo-tabs ul.tabNavigation{
+	height: 35px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: transparent;
+	vertical-align: top;
+}
+.form-area #metainfo-tabs ul.tabNavigation li{
+	height: 35px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: transparent;
+	vertical-align: top;
+}
+.form-area #metainfo-tabs ul.tabNavigation li:first-child{
+	display: none;
+}
+.form-area #metainfo-tabs ul.tabNavigation li a{
+    color: #222;
+	height: 35px;
+	margin: 0;
+	padding: 0 10px;
+    font-size: 14px;
+	line-height: 35px;
+    font-weight: bold;
+	border: none;
+	border-right: 1px solid #d8d8d8;
+	background: transparent;
+	vertical-align: top;
+}
+.form-area #metainfo-tabs ul.tabNavigation li a.here{
+	color: #222 !important;
+}
+.form-area #metainfo-content{
+	margin: 8px 0 0 0;
+	padding: 0;
+	display: block;
+	background-color: transparent;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+.form-area #metainfo-content div.page{
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+.form-area #metainfo-content div#pagetitle{
+	width: 100%;
+	margin: 0 0 15px 0;
+	padding: 0 370px 0 0;
+	display: block !important;
+	position: static;
+}
+.form-area #metainfo-content div#pagetitle #div-title{
+	margin: 0;
+	padding: 0;
+}
+.form-area #metainfo-content div#pagetitle #div-title input{
+	width: 100% !important;
+	padding: 3px 8px;
+	font-size: 25px !important;
+}
+/* @end FORM CONTENT */
+
+/* @start PSEUDO SIDEBAR */
+#metainfo-content div#metadata,
+#metainfo-content div#settings{
+	top: 0;
+	right: 0;
+	margin: 135px 0 0 0;
+	padding: 0;
+	display: block;
+	position: absolute;
+}
+#metainfo-content div#pagetitle[style="display: block;"]+div#metadata{
+	display: block !important;
+}
+#metainfo-content div#metadata #div-metadata,
+#metainfo-content div#settings #div-settings{
+	width: 350px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #d8d8d8;
+	background: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+#metainfo-content div#metadata #div-metadata:before,
+#metainfo-content div#settings #div-settings:before{
+	content: "";
+	color: #222;
+	width: 350px;
+	height: 35px;
+	margin: 0;
+	padding: 8px 12px;
+	display: block;
+	border-bottom: 1px solid #d8d8d8;
+}
+#metainfo-content div#metadata #div-metadata table,
+#metainfo-content div#settings #div-settings table{
+	width: 100%;
+	margin: 10px 0;
+}
+#metainfo-content div#metadata #div-metadata table tr td,
+#metainfo-content div#settings #div-settings table tr td{
+	padding: 3px 10px;
+	font-size: 13px;
+}
+#metainfo-content div#metadata #div-metadata table tr td.label,
+#metainfo-content div#settings #div-settings table tr td.label{
+	width: 102px;
+	padding: 8px 2px 3px 10px;
+}
+#metainfo-content div#metadata #div-metadata table tr td .textbox,
+#metainfo-content div#settings #div-settings table tr td .textbox{
+	width: 100% !important;
+}
+#metainfo-content div#settings #div-settings table tr td.field label[for="page_published_on"]{
+	display: block;
+}
+#metainfo-content div#settings #div-settings table tr td.field img.datepicker:before{
+	content: "\f145";
+	speak: none;
+	font-family: "dashicons";
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.form-area #metainfo-content .textbox, .form-area #metainfo-content .textarea{
+	font-size: 13px;
+}
+.form-area #metainfo-content .textarea{
+	height: 100px;
+	resize: none;
+}
+/* @end PSEUDO SIDEBAR */
+
+/* @start GENERAL FORM DESIGN */
+.form-area #part-tabs{
+	clear: both;
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	padding: 0 370px 0 0;
+	display: block;
+	position: static;
+	background: transparent;
+}
+.form-area #part-tabs #tab-toolbar{
+	float: none;
+	height: 40px;
+	margin: 0;
+	display: inline-block;
+	z-index: 100;
+	vertical-align: top;
+}
+.form-area #part-tabs #tab-toolbar a{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	padding: 1px 0 0 0;
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	line-height: 37px;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	vertical-align: top;
+}
+.form-area #part-tabs #tab-toolbar a img{
+	display: none;
+}
+.form-area #part-tabs #tab-toolbar a:before{
+	color: #bbb;
+	display: block;
+	font-size: 20px;
+	line-height: 38px;
+	background-image: none !important;
+	vertical-align: top;
+	speak: none;
+	font-family: "dashicons";
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.form-area #part-tabs #tab-toolbar a#add-part:before{
+	content: "\f502";
+}
+.form-area #part-tabs #tab-toolbar a#delete-part:before{
+	content: "\f153";
+}
+.form-area #part-tabs #tab-toolbar a#add-part:hover:before{
+	color: #7AD03A;
+}
+.form-area #part-tabs #tab-toolbar a#delete-part:hover:before{
+	color: #dd0000;
+}
+.form-area #part-tabs ul.tabNavigation{
+	float: left;
+	cursor: pointer;
+	width: auto;
+	min-width: 205px;
+	height: 40px;
+	display: inline-block;
+	z-index: 100;
+	position: relative;
+	border: none;
+}
+.form-area #part-tabs ul.tabNavigation:before{
+	width: 165px;
+	content: "Select a Content Part";
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	line-height: 38px;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+}
+.form-area #part-tabs ul.tabNavigation:hover:before{
+	border-bottom-color: #fff;
+}
+.form-area #part-tabs ul.tabNavigation:after{
+	color: #aaa;
+	width: 40px;
+	max-height: 80px;
+	top: 0;
+	left: 165px;
+	content: "\f347";
+	margin: 0;
+	padding: 2px 0 0 0;
+	display: inline-block;
+	z-index: 100;
+	position: absolute;
+	font-size: 20px;
+	text-align: center;
+	line-height: 36px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	speak: none;
+	font-family: "dashicons";
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.form-area #part-tabs ul.tabNavigation:hover:after{
+	color: #333;
+}
+.form-area #part-tabs ul.tabNavigation li.tab{
+	float: none;
+	width: 205px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	z-index: 100;
+	display: block;
+	position: static;
+	visibility: hidden;
+	border: none;
+	line-height: 28px;
+	background-color: #fff;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.form-area #part-tabs ul.tabNavigation:hover li.tab{
+	visibility: visible;
+}
+.form-area #part-tabs ul.tabNavigation li.tab:last-child{
+	border-bottom: 1px solid #ccc;
+}
+.form-area #part-tabs ul.tabNavigation li.tab a{
+	color: #777 !important;
+	width: auto;
+	min-height: 28px;
+	height: auto;
+	margin: 0;
+	padding: 5px 15px;
+	font-size: 13px;
+	line-height: 18px;
+	border: none;
+	background-color: #fff;
+}
+.form-area #part-tabs ul.tabNavigation li.tab a:hover{
+	background-color: #f0f0f0;
+}
+.form-area #part-tabs ul.tabNavigation li.tab a.here{
+	color: #888 !important;
+	top: 35px;
+	left: 0;
+	right: -80px;
+	min-height: 0;
+	margin: 8px 0 0 10px;
+	padding: 0;
+	display: inline-block;
+	z-index: 99;
+	position: absolute;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: bold;
+	visibility: visible;
+	background: transparent;
+}
+.form-area #part-tabs ul.tabNavigation li.tab a.here:before{
+	margin: 0 5px 0 0;
+	padding: 0;
+	content: "Current Part:";
+	display: inline-block;
+}
+.form-area #part-tabs ul.tabNavigation:hover li.tab a.here{
+	visibility: hidden;
+}
+.form-area #part-content{
+	clear: both;
+	width: 100%;
+	margin: 0;
+	padding: 0 370px 0 0;
+	display: block;
+	position: static;
+	background: transparent;
+}
+.form-area #part-content .page{
+	width: 100%;
+	margin: 0 370px 0 0;
+	padding: 0;
+}
+.form-area #part-content .page .part{
+	display: block;
+	text-align: right;
+}
+.form-area #part-content .page .part label{
+	display: none;
+}
+.form-area #part-content .page .part div textarea{
+	height: 520px;
+	margin: 0 0 5px 0;
+	padding: 10px;
+	resize: vertical;
+}
+.form-area+p.buttons{
+	margin: 0 !important;
+}
+body#body_page_add .form-area+p.buttons,
+body#body_page_edit .form-area+p.buttons{
+	color: #fff;
+	width: 350px;
+	top: 55px;
+	right: 0;
+	margin: 0;
+	padding: 10px 15px;
+	position: absolute;
+	font-size: 0;
+	text-align: center;
+	border: 1px solid #d8d8d8;
+	background-color: #fff;
+}
+body#body_page_add .form-area+p.buttons:before,
+body#body_page_edit .form-area+p.buttons:before{
+	content: "Publish Page";
+	color: #222;
+	width: 348px;
+	height: 35px;
+	margin: -10px -15px 10px -15px;
+	padding: 8px 12px;
+	display: block;
+    font-size: 14px;
+	text-align: left;
+    line-height: 1.4em;
+    font-weight: bold !important;
+	border-bottom: 1px solid #d8d8d8;
+	background-color: #fff;
+}
+body#body_page_add .form-area+p.buttons input,
+body#body_page_edit .form-area+p.buttons a{
+	margin: 2px !important;
+}
+.form-area .row{
+	float: right;
+	clear: both;
+	display: inline-block;
+	margin: 0;
+	padding: 0 370px 0 0;
+	background: transparent;
+	text-align: left;
+}
+.form-area .row p{
+	float: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+.form-area .row label{
+	color: #ededed;
+	margin: 0 5px 0 0;
+	font-size: 0;
+	font-weight: normal;
+}
+.form-area .row label[for="page_status_id"]:after{
+	color: #999;
+	content: "\f123";
+	padding: 0 2px 0 5px;
+	font-size: 22px;
+	line-height: 28px;
+	background-image: none !important;
+	vertical-align: top;
+	speak: none;
+	font-family: "dashicons";
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.form-area .row label[for="page_comment_status"]:after{
+	color: #999;
+	content: "\f101";
+	padding: 1px 2px 0 5px;
+	font-size: 22px;
+	line-height: 28px;
+	background-image: none !important;
+	vertical-align: top;
+	speak: none;
+	font-family: "dashicons";
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.form-area .row+p{
+	color: #999;
+	float: left;
+	display: inline-block;
+	font-size: 14px !important;
+}
+/* @end GENERAL FORM DESIGN */
+
+/* @start SNIPPETS AND LAYOUT DESIGN */
+body#body_snippet_add #content-wrapper #content .form-area #meta-pages,
+body#body_snippet_edit #content-wrapper #content .form-area #meta-pages,
+body#body_layout_add #content-wrapper #content .form-area .title,
+body#body_layout_edit #content-wrapper #content .form-area .title,
+body#body_snippet_add #content-wrapper #content .form-area #pages .page,
+body#body_snippet_edit #content-wrapper #content .form-area #pages .page,
+body#body_layout_add #content-wrapper #content .form-area table.fieldset,
+body#body_layout_edit #content-wrapper #content .form-area table.fieldset,
+body#body_layout_edit #content-wrapper #content .form-area .content,
+body#body_layout_add #content-wrapper #content .form-area .content{
+    clear: both;
+    width: 100%;
+    margin: 0;
+    padding: 0 370px 0 0;
+    display: block;
+    position: static;
+    background: transparent;
+}
+body#body_snippet_add #content-wrapper #content .form-area #pages,
+body#body_snippet_edit #content-wrapper #content .form-area #pages{
+	background-color: transparent;
+}
+body#body_snippet_add #content-wrapper #content .form-area #meta-pages .title input#snippet_name,
+body#body_snippet_edit #content-wrapper #content .form-area #meta-pages .title input#snippet_name,
+body#body_layout_add #content-wrapper #content .form-area .title input#layout_name,
+body#body_layout_edit #content-wrapper #content .form-area .title input#layout_name{
+	width: 100% !important;
+	margin: 0 !important;
+	display: block !important;
+	font-size: 25px !important;
+}
+body#body_snippet_add #content-wrapper #content .form-area #pages .page p,
+body#body_snippet_edit #content-wrapper #content .form-area #pages .page p{
+	margin: 0 0 5px 0;
+	text-align: right;
+}
+body#body_snippet_add #content-wrapper #content .form-area #pages .page p select,
+body#body_snippet_edit #content-wrapper #content .form-area #pages .page p select{
+	margin-right: 0;
+}
+body#body_layout_add #content-wrapper #content .form-area table.fieldset,
+body#body_layout_edit #content-wrapper #content .form-area table.fieldset{
+	width: auto;
+	border: none;
+	margin: 4px 0 4px 0;
+	float: right;
+}
+body#body_layout_add #content-wrapper #content .form-area table.fieldset tr td,
+body#body_layout_edit #content-wrapper #content .form-area table.fieldset tr td{
+	color: #999;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	border: none;
+	background: transparent;
+}
+body#body_layout_add #content-wrapper #content .form-area table.fieldset tr td:first-child,
+body#body_layout_edit #content-wrapper #content .form-area table.fieldset tr td:first-child{
+	padding: 0 20px 0 0;
+}
+body#body_layout_add #content-wrapper #content .form-area table.fieldset tr td:last-child,
+body#body_layout_edit #content-wrapper #content .form-area table.fieldset tr td:last-child{
+	padding-right: 0;
+}
+body#body_layout_add #content-wrapper #content .form-area table.fieldset tr td label,
+body#body_layout_edit #content-wrapper #content .form-area table.fieldset tr td label{
+	font-weight: normal;
+}
+body#body_layout_add #content-wrapper #content .form-area table.fieldset tr td input,
+body#body_layout_edit #content-wrapper #content .form-area table.fieldset tr td input{
+	margin-right: 0;
+}
+body#body_snippet_add #content-wrapper #content .form-area #pages .page textarea,
+body#body_snippet_edit #content-wrapper #content .form-area #pages .page textarea,
+body#body_layout_add #content-wrapper #content .form-area .content textarea,
+body#body_layout_edit #content-wrapper #content .form-area .content textarea{
+	height: 500px;
+	padding: 10px;
+	resize: vertical;
+}
+body#body_snippet_add #content-wrapper #content .form-area .textarea+p,
+body#body_snippet_edit #content-wrapper #content .form-area .textarea+p,
+body#body_layout_add #content-wrapper #content .form-area .content+p,
+body#body_layout_edit #content-wrapper #content .form-area .content+p{
+	color: #999;
+	float: left;
+	margin: 0;
+	padding: 0 0 0 5px;
+	display: inline-block;
+	font-size: 14px !important;
+}
+body#body_layout_add #content-wrapper #content .form-area .content+p,
+body#body_layout_edit #content-wrapper #content .form-area .content+p{
+	margin: 0 0 5px 0;
+	padding: 0 0 0 5px;
+}
+body#body_snippet_add #content-wrapper #content .form-area+p.buttons,
+body#body_snippet_edit #content-wrapper #content .form-area+p.buttons,
+body#body_layout_add #content-wrapper #content .form-area+p.buttons,
+body#body_layout_edit #content-wrapper #content .form-area+p.buttons{
+	color: #fff;
+	width: 350px;
+	top: 54px;
+	right: 0;
+	margin: 0;
+	padding: 10px 15px;
+	position: absolute;
+	font-size: 0;
+	text-align: center;
+	border: 1px solid #d8d8d8;
+	background-color: #fff;
+}
+body#body_snippet_add #content-wrapper #content .form-area+p.buttons:before,
+body#body_snippet_edit #content-wrapper #content .form-area+p.buttons:before,
+body#body_layout_add #content-wrapper #content .form-area+p.buttons:before,
+body#body_layout_edit #content-wrapper #content .form-area+p.buttons:before{
+	color: #222;
+	width: 348px;
+	height: 35px;
+	margin: -10px -15px 10px -15px;
+	padding: 8px 12px;
+	display: block;
+    font-size: 14px;
+	text-align: left;
+    line-height: 1.4em;
+    font-weight: bold !important;
+	border-bottom: 1px solid #d8d8d8;
+	background-color: #fff;
+}
+body#body_snippet_add #content-wrapper #content .form-area+p.buttons:before{
+	content: "Publish Snippet";
+}
+body#body_snippet_edit #content-wrapper #content .form-area+p.buttons:before{
+	content: "Update Snippet";
+}
+body#body_layout_add #content-wrapper #content .form-area+p.buttons:before{
+	content: "Publish Layout";
+}
+body#body_layout_edit #content-wrapper #content .form-area+p.buttons:before{
+	content: "Update Layout";
+}
+body#body_snippet_add #content-wrapper #content .form-area+p.buttons input,
+body#body_snippet_add #content-wrapper #content .form-area+p.buttons a,
+body#body_snippet_edit #content-wrapper #content .form-area+p.buttons input,
+body#body_snippet_edit #content-wrapper #content .form-area+p.buttons a,
+body#body_layout_add #content-wrapper #content .form-area+p.buttons input,
+body#body_layout_add #content-wrapper #content .form-area+p.buttons a,
+body#body_layout_edit #content-wrapper #content .form-area+p.buttons input,
+body#body_layout_edit #content-wrapper #content .form-area+p.buttons a{
+	margin: 2px !important;
+}
+/* @end SNIPPETS AND LAYOUT DESIGN */
+
+/* @start SETTINGS */
+fieldset{
+	border: none;
+}
+legend{
+	display: none;
+}
+table.fieldset{
+	width: auto;
+	margin-top: 0;
+}
+table.fieldset tbody tr:before{
+	display: none;
+}
+table.fieldset tbody tr td{
+	width: auto;
+	padding: 0;
+	border: none;
+	text-align: left;
+	background: transparent;
+}
+table.fieldset tbody tr td[colspan="3"] h3{
+	display: none;
+}
+table.fieldset tbody tr td.label{
+	width: 200px;
+	padding: 20px 10px 20px 10px;
+	text-align: left;
+	font-size: 14px;
+	line-height: 1.3;
+	font-weight: 600;
+	vertical-align: top;
+}
+table.fieldset tbody tr td.field{
+	width: 375px;
+	margin-bottom: 9px;
+	padding: 15px 10px;
+	line-height: 1.3;
+	vertical-align: middle;
+}
+table.fieldset tbody tr td.field input[type=text]{
+	width: 25em;
+	font-size: 14px;
+}
+table.fieldset tbody tr td.help{
+	color: #888;
+	width: 400px;
+	padding: 5px 15px;
+	font-size: 13px;
+	font-style: italic;
+	line-height: 20px;
+}
+/* @end SETTINGS */

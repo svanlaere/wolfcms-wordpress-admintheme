@@ -1,0 +1,134 @@
+/*
+ |	A WordPress like AdminTheme for the Wolf
+ |	@file		./css/colors/default.css
+ |	@author		SamBrishes <pytes@gmx.net>
+ |	@version	0.3.0 [0.2.0] - Alpha
+ |
+ |	@require	Wolf CMS 0.8.3, CSS3-capable Browser
+ */
+/*
+ |	COLOR SCHEME @ codex.wordpress.org/Function_Reference/register_admin_color_schemes
+ |
+ |	BLACK #1		#111111		rgb(17, 17, 17)
+ |	BLACK #2		#222222		rgb(34, 34, 34)
+ |	DARK BLUE		#0074A2		rgb(0, 116, 162)
+ |	LIGHT BLUE		#2EA2CC		rgb(46, 162, 204)
+ */
+
+/* @start GENERAL */
+a, a:visited{
+	color: #0074a2 !important;
+}
+a:hover, a:active, a:visited:hover{
+	color: #2ea2cc !important;
+}
+input:focus, select:focus, textarea:focus{
+	border-color: #2EA2CC !important;
+	box-shadow: 0 0 2px rgba(46, 162, 204, 0.5);
+	-moz-box-shadow: 0 0 2px rgba(46, 162, 204, 0.5);
+	-webkit-box-shadow: 0 0 2px rgba(46, 162, 204, 0.5);
+}
+input[type="checkbox"]:checked:before{
+	color: #2EA2CC;
+}
+input[type="radio"]:checked:before{
+	background-color: #2EA2CC;
+}
+input[type="button"], input[type="submit"]{
+ 	color: #fff;
+	background: #2EA2CC;
+	border-color: #0074A2;
+}
+input[type="button"]:hover, input[type="submit"]:hover,
+input[type="button"]:focus, input[type="submit"]:focus{
+	color: #fff;
+	background: #1e8cbe;
+	border-color: #0074a2;
+}
+input[type="button"]:active, input[type="submit"]:active{
+	color: rgba(255, 255, 255, 0.8);
+	background: #1b7aa6;
+	border-color: #005684 !important;
+}
+input[type="button"]:disabled, input[type="submit"]:disabled{
+	color: rgba(255, 255, 255, 0.5) !important;
+	background: #2EA2CC !important;
+	border-color: #1b7aa6 !important;
+}
+/* @end GENERAL */
+
+/* @start HEADER, NAV, SITE-LINKS */
+#header,
+#header #mainTabs,
+#header #mainTabs ul,
+#header #mainTabs ul li{
+	background: #222222;
+}
+#header #site-title a:before,
+#header #mainTabs ul li a:before,
+#footer #site-links a:before{
+	color: #999;
+}
+#header #site-title a,
+#header #mainTabs ul li a,
+#footer #site-links a{
+	color: #eee !important;
+}
+#header #site-title a:hover,
+#header #mainTabs ul li a:hover,
+#footer #site-links a:hover{
+	color: #2EA2CC !important;
+	background: #111111;
+}
+#header #site-title a:hover:before,
+#header #mainTabs ul li a:hover:before,
+#footer #site-links a:hover:before{
+	color: #2EA2CC;
+}
+#header #mainTabs ul li a.current,
+#header #mainTabs ul li a.current:before{
+	color: #fff !important;
+	background-color: #0074A2;
+}
+/* @end HEADER, NAV, SITE-LINKS */
+
+/* @start ADJUSTMENTS */
+.tabs ul.tabNavigation li a:hover,
+.tabs ul.tabNavigation li.tab a:hover{
+	color: #2EA2CC !important;
+}
+.tabs ul.tabNavigation li a.here,
+.tabs ul.tabNavigation li.tab a.here{
+	color: #1b7aa6 !important;
+}
+#sidebar p.button a:hover,
+.form-area #part-tabs ul.tabNavigation li.tab a:hover{
+	color: #2EA2CC !important;
+}
+index .node a:hover:before,
+ul.index li.node:hover:before,
+table.index tbody tr:hover:before,
+div#plugins table.index tbody tr td.website a:hover:before,
+ul#site-map-root>li>div.page:hover>span:before,
+ul#site-map li div.content-children:hover:before,
+ul#site-map-root>li>div.view-page a:hover:before,
+ul#site-map li div.content-children>div.view-page a:hover:before,
+ul#site-map li div.content-children>div.modify a:last-child:hover:before{
+	color: #2EA2CC !important;
+}
+/* @end ADJUSTMENTS */
+
+/* @start PLUGINS */
+ol#comments li:hover:before,
+table.index#files-list tbody tr td:last-child>a:hover:first-child:before{
+	color: #2EA2CC !important;
+}
+#header #mainTabs ul li a span#comment-badge:before,
+#header #mainTabs ul li a span#comment-badge:after,
+#header #mainTabs ul li a span#comment-badge{
+	background-color: #0074A2;
+}
+ol#comments li div.infos a:first-child:hover:before{
+	color: #0074A2;
+}
+/* @end PLUGINS */

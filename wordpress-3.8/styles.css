@@ -1,33 +1,48 @@
 /*
- *	WORDPRESS 3.8 ADMIN THEME
- *	@version	0.2.0-alpha
- *
- *	@author		SamBrishes <pytes@gmx.net>
- *	@authorURL	http://wolfcms.pytes.net
- *
- *	@requires	Wolf CMS 0.8.1 or 0.8.2
+ |	A WordPress like AdminTheme for the Wolf
+ |	@file		./styles.css
+ |	@author		SamBrishes <pytes@gmx.net>
+ |	@version	0.3.0 [0.1.0] - Alpha
+ |
+ |	@require	Wolf CMS 0.8.3, CSS3-capable Browser
  */
- 
-/*
- *	DON'T EDIT THE FOLLOWING LINE
- */
-@import url("loader.css");
+@import url("loader.css"); /* Please, don't edit this line. */
 
 /*
- *	CONFIGURE THE ADMIN COLOR SHEME
- *
- *	To change the admin color sheme replace the text after the
- *	following "@import" rule into one of the following values:
- *
- *	Default Color Sheme:		url("css/color/default.css");
- *	Light Color Sheme:			url("css/color/light.css");
- *	Blue Color Sheme:			url("css/color/blue.css");
- *	Coffee Color Sheme:			url("css/color/coffee.css");
- *	Sunrise Color Sheme:		url("css/color/sunrise.css");
- *	Ectoplasm Color Sheme:		url("css/color/ectoplasm.css");
- *	Midnight Color Sheme:		url("css/color/midnight.css");
- *	Ocean Color Sheme:			url("css/color/ocean.css");
+ |	CHANGE THE NAVIGATION WIDTH
+ |
+ |	To change the navigation width replace the number inside the
+ |	following "@import" rule with an number between 160 and 260!
+ | (In increments of 10, ex.: 160, 170, 180, 190, and so on.)
  */
-@import url("css/color/midnight.css");
+@import url("css/width/160.css");
+
+/*
+ |	EN/DISABLE EXPERIMENTAL RESPONSIVE TEST
+ |
+ |	To disable this option comment out the following import rule.
+ |	To enable this option do the opposite. ;)
+ */
+/*@import url("css/part.responsive.css");*/
+
+/*
+ |	CHANGE THE ADMIN COLOR SHEME
+ |
+ |	To change the admin color sheme replace the text after the
+ |	following "@import" rule into one of the following values:
+ |	
+ |	Default:			url("css/colors/default.css");
+ |	Light:				url("css/colors/light.css");
+ |	Blue:				url("css/colors/blue.css");
+ |	Coffee:				url("css/colors/coffee.css");
+ |	Sunrise:			url("css/colors/sunrise.css");
+ |	Ectoplasm:			url("css/colors/ectoplasm.css");
+ |	Midnight:			url("css/colors/midnight.css");
+ |	Ocean:				url("css/colors/ocean.css");
+ |	Frog (new):			url("css/colors/frog.css");
+ |	Wolf (new):			url("css/colors/wolf.css");
+ |	pytesNET (new):		url("css/colors/pytes.css");
+ */
+@import url("css/colors/default.css");
 
 /* END :3 - Thanks for Using <3 */

@@ -1,0 +1,116 @@
+/*
+ |	A WordPress like AdminTheme for the Wolf
+ |	@file		./css/part.editor.css
+ |	@author		SamBrishes <pytes@gmx.net>
+ |	@version	0.3.0 [0.2.0] - Alpha
+ |
+ |	@require	Wolf CMS 0.8.3, CSS3-capable Browser
+ */
+div.markItUp .markItUpContainer .markItUpHeader{
+	display: block;
+	text-align: left;
+	border-top: 1px solid #dedede;
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+	background-color: #F5F5F5;
+}
+div.markItUp .markItUpContainer .markItUpHeader ul{
+	padding: 5px;
+	display: block;
+	text-align: left;
+}
+div.markItUp .markItUpContainer .markItUpHeader ul li{
+	float: none;
+	display: inline-block;
+	position: static;
+	text-align: right;
+}
+div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpSeparator{
+	margin-top: 5px;
+	vertical-align: top;
+}
+div.markItUp .markItUpContainer .markItUpHeader ul li a{
+	color: transparent;
+	width: 26px;
+	height: 26px;
+	max-width: 26px;
+	max-height: 26px;
+	padding: 5px;
+	display: block;
+	position: relative;
+	border: 1px solid transparent;
+	outline: none;
+	font-size: 0;
+	line-height: 22px;
+	white-space: nowrap;
+	overflow: hidden;
+	background-image: none;
+}
+div.markItUp .markItUpContainer .markItUpHeader ul li a:hover{
+	border-color: #999;
+	box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0, 0, 0, 0.08);
+	-webkit-box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0, 0, 0, 0.08);
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+div.markItUp .markItUpContainer .markItUpHeader ul li a:before{
+	top: 0;
+	left: 2px;
+	color: #999;
+	width: 26px;
+	height: 26px;
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: absolute;
+	font-size: 20px;
+	text-align: left;
+	font-family: "dashicons";
+	text-indent: 0;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-image: none !important;
+	vertical-align: top;
+}
+div.markItUp .markItUpContainer .markItUpFooter{
+	margin: -8px 0 0 0;
+	padding: 0;
+	display: block;
+}
+div.markItUp .markItUpPreviewFrame{
+	border: 1px solid #d4d4d4;
+}
+
+/* @start EDITOR BUTTON-ICONS */
+div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton1 a:before{ content: "H1"; font-size: 12px; padding-left: 3px; }
+div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton2 a:before{ content: "H2"; font-size: 12px; padding-left: 2px; }
+div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton3 a:before{ content: "H3"; font-size: 12px; padding-left: 2px; }
+div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton4 a:before{ content: "H4"; font-size: 12px; padding-left: 2px; }
+div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton5 a:before{ content: "H5"; font-size: 12px; padding-left: 2px; }
+div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton6 a:before{ content: "H6"; font-size: 12px; padding-left: 2px; }
+
+div.markdown div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton7 a:before{ content: "\f200"; }
+div.markdown div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton8 a:before{ content: "\f201"; }
+div.markdown div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton9 a:before{ content: "\f203"; }
+div.markdown div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton10 a:before{ content: "\f204"; }
+div.markdown div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton11 a:before{ content: "\f233"; }
+div.markdown div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton12 a:before{ content: "\f103"; }
+div.markdown div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton13 a:before{ content: "\f205"; }
+div.markdown div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton14 a:before{ content: "\f475"; }
+div.markdown div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton15 a:before{ content: "\f177"; }
+
+div.textile div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton7 a:before{ content: "\f476"; font-size: 18px; padding-top: 1px; padding-left: 1px; }
+div.textile div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton8 a:before{ content: "\f200"; }
+div.textile div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton9 a:before{ content: "\f201"; }
+div.textile div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton10 a:before{ content: "\f224"; padding-top: 1px; }
+div.textile div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton11 a:before{ content: "\f203"; }
+div.textile div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton12 a:before{ content: "\f204"; }
+div.textile div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton13 a:before{ content: "\f233"; }
+div.textile div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton14 a:before{ content: "\f103"; }
+div.textile div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton15 a:before{ content: "\f205"; }
+div.textile div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton16 a:before{ content: "\f475"; }
+div.textile div.markItUp .markItUpContainer .markItUpHeader ul li.markItUpButton17 a:before{ content: "\f177"; }
+/* @end EDITOR BUTTON-ICONS */

@@ -1,0 +1,24 @@
+/*
+ |	A WordPress like AdminTheme for the Wolf
+ |	@file		./css/width/200.css
+ |	@author		SamBrishes <pytes@gmx.net>
+ |	@version	0.3.0 [0.3.0] - Alpha
+ |
+ |	@require	Wolf CMS 0.8.3, CSS3-capable Browser
+ */
+#header #site-title a{
+	min-width: 200px;
+}
+#header #mainTabs{
+	width: 200px;
+}
+#main{
+	padding-left: 200px;
+}
+#footer{
+	margin-left: 200px;
+}
+div.message, div.message#info, 
+div.message#error, div.message#success{
+	left: 200px;
+}

@@ -1,18 +1,26 @@
 /*
- *	WORDPRESS 3.8 BACK-END DESIGN FOR WOLF CMS 0.8.1
- *	@version	0.1.0-alpha
- *
- *	@author		SamBrishes <pytes@gmx.net>
- *	@authorURL	http://wolfcms.pytes.net
+ |	A WordPress like AdminTheme for the Wolf
+ |	@file		./login.css
+ |	@author		SamBrishes <pytes@gmx.net>
+ |	@version	0.3.0 [0.1.0] - Alpha
+ |
+ |	@require	Wolf CMS 0.8.3, CSS3-capable Browser
  */
-
 @import url("styles.css");
 
 h1{
-	margin: 50px 0 5px 0;
+	margin: 0;
 	font-size: 20px;
 	text-align: center;
 	font-weight: normal;
+}
+h1:before{
+	width: 100px;
+	height: 99px;
+	content: "";
+	margin: 0 auto 10px auto;
+	display: block;
+	background: transparent url("logo.png") top left no-repeat;
 }
 p{
 	margin: 0 0 15px 0;
@@ -20,21 +28,20 @@ p{
 p:last-child{
 	margin: 0;
 }
-
 #dialog{
 	width: 320px;
 	margin: auto;
-	padding: 0px 0px;
+	padding: 5% 0 0 0;
 }
 #dialog form{
 	margin: 20px 0 0 0;
-	padding: 26px 24px 46px 24px;
+	padding: 26px 24px;
 	font-weight: 400;
 	overflow: hidden;
 	background: none repeat scroll 0% 0% #FFF;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.13);
-	-moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.13);
-	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.13);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
 #dialog form div#login-username-div,
 #dialog form div#login-password-div{
@@ -44,7 +51,8 @@ p:last-child{
 	line-height: 1.5;
 }
 #dialog form div#login-username-div label,
-#dialog form div#login-password-div label{
+#dialog form div#login-password-div label,
+#dialog form>div label[for="forgot-email"]{
 	color: #777;
 	margin: 0;
 	padding: 0;
@@ -52,11 +60,12 @@ p:last-child{
 	font-size: 14px;
 }
 #dialog form div#login-username-div input,
-#dialog form div#login-password-div input{
+#dialog form div#login-password-div input,
+#dialog form>div input[id="forgot-email"]{
 	width: 100%;
 	margin: 2px 6px 16px 0px;
-	padding: 3px;
-	font-size: 24px;
+	padding: 5px;
+	font-size: 24px !important;
 	background: none repeat scroll 0% 0% #FBFBFB;
 }
 #dialog form div.clean+div{
@@ -64,30 +73,39 @@ p:last-child{
 }
 #dialog form div label[for="login-remember-me"]{
 	color: #777;
-	font-size: 12px;
-	line-height: 19px;
 }
-#dialog form div input#login-remember-me{
-	margin: 1px 2px 0 0;
+#dialog form div#login_submit,
+#dialog form div#forgot-submit{
+	text-align: right;
 }
 #dialog form div#login_submit{
 	margin: 10px 0 0 0;
-	text-align: right;
 }
-#dialog form div#login_submit span{
+#dialog form div#login_submit span,
+#dialog form div#forgot-submit span{
 	float: left;
 	color: #777;
 	font-size: 12px;
 	line-height: 30px;
 }
-#dialog form div#login_submit input{
-}
 #dialog+p{
+	width: 320px;
+	margin: 10px auto 0 auto;
+	font-size: 0;
+}
+#dialog+p a{
 	color: #777;
 	margin: 10px 0 0 0;
-	font-size: 12px;
-	line-height: 30px;
+	font-size: 13px;
 	text-align: center;
+	line-height: 30px;
+	font-family: sans-serif;
+}
+#dialog+p a:before{
+	margin: 0 3px 0 5px;
+	content: "\2190  Go back to ";
+	display: inline-block;
+	vertical-align: top;
 }
 #dialog .message{
 	font-size: 13px;
