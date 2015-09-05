@@ -13,12 +13,12 @@ Check out the [```./screenshots/```](https://github.com/SamBrishes/wolfcms-wordp
 directory to see some ... screenshots!
 
 ## Features
-*[x] Open Sans and Dashicon Font (1.07)
-*[x] Many CSS 3 Stuff (Image Replacements, ...)
-*[x] 8 wp-original + 3 new admin color schemes
-*[x] Configurable Navigation Width
-*[x] Compatible with Chrome, Firefox 17+, Opera 15+ and IE 9
-*[x] Supports all Wolf-Core plugins
+* [x] Open Sans and Dashicon Font (1.07)
+* [x] Many CSS 3 Stuff (Image Replacements, ...)
+* [x] 8 wp-original + 3 new admin color schemes
+* [x] Configurable Navigation Width
+* [x] Compatible with Chrome, Firefox 17+, Opera 15+ and IE 9
+* [x] Supports all Wolf-Core plugins
 
 ## Installation
 1.	Download and Unpack the folder.
