@@ -1,13 +1,7 @@
 WordPress 3.8 AdminTheme
 ===========================
-<<<<<<< HEAD
 >	Version: 0.3.0 Alpha<br />
 >	Author: SamBrishes <pytes@gmx.net>
-=======
->	Status: Alpha<br />
->	Version: 0.2.0<br />
->	Author: SamBrishes, pytesNET
->>>>>>> origin/master
 
 Wolf + WordPress = <3?
 
