@@ -33,7 +33,10 @@ favorite editor. Follow the instructions there.
 
 #### Available Settings
 *	Change the Navigation-Width
+	*	Available Sizes: Between 160 and 250 (10-Step-Way)
 *	Change the admin color scheme
+	*	Default, Light, Blue, Coffee, Sunrise, Ectoplasm, Midnight, Ocean
+	*	(New in 0.3.0) Frog, Wolf, pytesNET
 
 ## Browser Compatibility
 Tested, under an WinVista 32-Bit OS, with the following browsers:

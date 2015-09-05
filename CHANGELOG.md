@@ -1,28 +1,28 @@
 CHANGELOG
 ===========
 ##### Version 0.3.0
-*[x]	Info: Only tested with Wolf CMS 0.8.3(.1)!
-*[x]	Add: Configurable Navigation width
-*[x]	Add: 3 new admin color schemes
-*[x]	Add: Support for all core plugins.
-*[x]	Update: Dashicon Font 1.07
-*[x]	Update: Re-Display User Avatars
-*[x]	Update: Re-Display the "View this page" button
-*[x]	Update: Re-Display the "Last updated by" text
-*[x]	Update: "Page-Content-Parts" Selector Design
-*[x]	Update: Pseudo Widgets on Pages, Snippets and Layouts Form
-*[x]	Update: Replace file-type-images (File Manager)
-*[x]	Update: Tables and Buttons (Comments Plugin)
-*[x]	Update: Some icons are changed
-*[x]	Update:	Normal label font-weight
-*[x]	Update: A few minor adjustments
-*[x]	Update: Back-End "Login" and "Forgot Password" Form
-*[x]	Update: Compatible with Opera 15 and IE 9
-*[x]	Update: Renamed "color" folder into "colors"
-*[x]	Update: Each admin color sheme + structure.
-*[x]	BugFix: Hover-Bug on Table-Lists and UL-Lists (Comments Plugin)
-*[x]	BugFix: Swapped Remove and Add link icons
-*[x]	BugFix: Design-Probs on a too large Counter Badge (Comments Plugin)
+* Info: Only tested with Wolf CMS 0.8.3(.1)!
+* Add: Configurable Navigation width
+* Add: 3 new admin color schemes
+* Add: Support for all core plugins.
+* Update: Dashicon Font 1.07
+* Update: Re-Display User Avatars
+* Update: Re-Display the "View this page" button
+* Update: Re-Display the "Last updated by" text
+* Update: "Page-Content-Parts" Selector Design
+* Update: Pseudo Widgets on Pages, Snippets and Layouts Form
+* Update: Replace file-type-images (File Manager)
+* Update: Tables and Buttons (Comments Plugin)
+* Update: Some icons are changed
+* Update:	Normal label font-weight
+* Update: A few minor adjustments
+* Update: Back-End "Login" and "Forgot Password" Form
+* Update: Compatible with Opera 15 and IE 9
+* Update: Renamed "color" folder into "colors"
+* Update: Each admin color sheme + structure.
+* BugFix: Hover-Bug on Table-Lists and UL-Lists (Comments Plugin)
+* BugFix: Swapped Remove and Add link icons
+* BugFix: Design-Probs on a too large Counter Badge (Comments Plugin)
 
 ##### Version 0.2.0
 *	Info: Last Update for Wolf CMS Version 0.8.1 / 0.8.2!
