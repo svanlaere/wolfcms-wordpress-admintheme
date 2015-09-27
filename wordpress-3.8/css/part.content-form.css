@@ -19,6 +19,7 @@
 .form-area{
 	margin: 0;
 	padding: 0;
+	overflow: auto;
 	position: relative;
 	background: transparent;
 }
@@ -30,13 +31,14 @@
 	font-weight: normal;
 }
 .form-area #metainfo-tabs{
+	float: right;
 	width: 350px;
-	right: 0;
 	margin: 135px 0 0 0;
 	padding: 0;
 	display: inline-block;
 	z-index: 100;
-	position: absolute;
+	border: 1px solid #d8d8d8;
+	background-color: #fff;
 }
 .form-area #metainfo-tabs ul.tabNavigation{
 	height: 35px;
@@ -73,90 +75,73 @@
 .form-area #metainfo-tabs ul.tabNavigation li a.here{
 	color: #222 !important;
 }
+/* @end FORM CONTENT */
+
+/* @start PSEUDO SIDEBAR */
 .form-area #metainfo-content{
-	margin: 8px 0 0 0;
+	width: 350px;
+	float: right;
+	clear: both;
+	margin: 0;
 	padding: 0;
-	display: block;
+	display: inline-block;
 	background-color: transparent;
 	border-radius: 0px;
 	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
 }
-.form-area #metainfo-content div.page{
-	margin: 0;
-	padding: 0;
-	display: block;
-}
-.form-area #metainfo-content div#pagetitle{
-	width: 100%;
-	margin: 0 0 15px 0;
-	padding: 0 370px 0 0;
-	display: block !important;
-	position: static;
-}
-.form-area #metainfo-content div#pagetitle #div-title{
-	margin: 0;
-	padding: 0;
-}
-.form-area #metainfo-content div#pagetitle #div-title input{
-	width: 100% !important;
-	padding: 3px 8px;
-	font-size: 25px !important;
-}
-/* @end FORM CONTENT */
-
-/* @start PSEUDO SIDEBAR */
 #metainfo-content div#metadata,
-#metainfo-content div#settings{
+#metainfo-content div#settings,
+#metainfo-content div.page{
 	top: 0;
 	right: 0;
-	margin: 135px 0 0 0;
+	margin: 0;
 	padding: 0;
 	display: block;
-	position: absolute;
 }
 #metainfo-content div#pagetitle[style="display: block;"]+div#metadata{
 	display: block !important;
 }
 #metainfo-content div#metadata #div-metadata,
-#metainfo-content div#settings #div-settings{
+#metainfo-content div#settings #div-settings,
+#metainfo-content div.page>div{
 	width: 350px;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 	border: 1px solid #d8d8d8;
+	border-top: none;
 	background: #fff;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
 	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
 }
-#metainfo-content div#metadata #div-metadata:before,
-#metainfo-content div#settings #div-settings:before{
-	content: "";
-	color: #222;
-	width: 350px;
-	height: 35px;
-	margin: 0;
-	padding: 8px 12px;
-	display: block;
-	border-bottom: 1px solid #d8d8d8;
+#metainfo-content div.page>div input,
+#metainfo-content div.page>div select,
+#metainfo-content div.page>div textarea{
+	font-size: 12px !important;
 }
 #metainfo-content div#metadata #div-metadata table,
-#metainfo-content div#settings #div-settings table{
+#metainfo-content div#settings #div-settings table,
+#metainfo-content div.page>div table{
 	width: 100%;
-	margin: 10px 0;
+	margin: 0 -10px;
+	padding: 0;
 }
 #metainfo-content div#metadata #div-metadata table tr td,
-#metainfo-content div#settings #div-settings table tr td{
+#metainfo-content div#settings #div-settings table tr td,
+#metainfo-content div.page>div table tr td{
 	padding: 3px 10px;
 	font-size: 13px;
 }
 #metainfo-content div#metadata #div-metadata table tr td.label,
-#metainfo-content div#settings #div-settings table tr td.label{
+#metainfo-content div#settings #div-settings table tr td.label,
+#metainfo-content div.page>div table tr td.label{
 	width: 102px;
 	padding: 8px 2px 3px 10px;
 }
 #metainfo-content div#metadata #div-metadata table tr td .textbox,
-#metainfo-content div#settings #div-settings table tr td .textbox{
+#metainfo-content div#settings #div-settings table tr td .textbox,
+#metainfo-content div.page>div table tr td .textbox{
 	width: 100% !important;
 }
 #metainfo-content div#settings #div-settings table tr td.field label[for="page_published_on"]{
@@ -177,18 +162,46 @@
 	height: 100px;
 	resize: none;
 }
+
+.form-area #metainfo-content div#pagetitle{
+	top: 0;
+	left: 0;
+	right: 350px;
+	width: 100%;
+	margin: 0 0 15px 0;
+	padding: 0 370px 0 0;
+	display: block !important;
+	position: absolute;
+}
+.form-area #metainfo-content div#pagetitle #div-title:before{
+	display: none;
+}
+.form-area #metainfo-content div#pagetitle #div-title{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: transparent;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.form-area #metainfo-content div#pagetitle #div-title input{
+	width: 100% !important;
+	padding: 3px 8px;
+	font-size: 25px !important;
+}
 /* @end PSEUDO SIDEBAR */
 
 /* @start GENERAL FORM DESIGN */
 .form-area #part-tabs{
-	clear: both;
-	width: 100%;
-	height: 40px;
-	margin: 0;
-	padding: 0 370px 0 0;
-	display: block;
-	position: static;
-	background: transparent;
+    width: auto;
+    height: 40px;
+    margin: 50px 0 0 0;
+    padding: 0 0 0 1px;
+	display: inline-block;
+    position: static;
+    background: transparent;
 }
 .form-area #part-tabs #tab-toolbar{
 	float: none;
@@ -360,13 +373,11 @@
 	visibility: hidden;
 }
 .form-area #part-content{
-	clear: both;
-	width: 100%;
-	margin: 0;
-	padding: 0 370px 0 0;
-	display: block;
-	position: static;
-	background: transparent;
+    margin: 0;
+    padding: 0 0 0 1px;
+    display: inline-block;
+    position: static;
+    background: transparent;
 }
 .form-area #part-content .page{
 	width: 100%;
@@ -673,7 +684,7 @@ table.fieldset tbody tr td.field{
 	margin-bottom: 9px;
 	padding: 15px 10px;
 	line-height: 1.3;
-	vertical-align: middle;
+	vertical-align: top;
 }
 table.fieldset tbody tr td.field input[type=text]{
 	width: 25em;

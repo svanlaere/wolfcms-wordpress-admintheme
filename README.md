@@ -8,6 +8,10 @@ Wolf + WordPress = <3?
 This AdminTheme dresses the Admin-Area of the Wolf CMS with a WordPress like garment. Tested with 
 the Wolf CMS 0.3.8(.1) only, requires a CSS 3 capable browser!
 
+## Attention
+This is the development branch of the Wolf WordPress AdminTheme, this branch contains insufficiently 
+tested code. So, this code may causes unwanted errors, so be careful.
+
 ## Screenshots
 Check out the [```./screenshots/```](https://github.com/SamBrishes/wolfcms-wordpress-admintheme/tree/master/screenshots) 
 directory to see some ... screenshots!
