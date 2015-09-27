@@ -15,6 +15,8 @@ update of WordPress Admin Theme.
 The develop branch contains currently the following Fixes:
 
 *	Theme doesn't play nice with custom plugin tabs - [Issue #6](https://github.com/SamBrishes/wolfcms-wordpress-admintheme/issues/6)
+*	Wrong row height - [Issue #4](https://github.com/SamBrishes/wolfcms-wordpress-admintheme/issues/4)
+*	Anchor-Jump on Settings Page - [Issue #3](https://github.com/SamBrishes/wolfcms-wordpress-admintheme/issues/3)
 
 ## Changes
 The develop branch contains currently the following Changes:
