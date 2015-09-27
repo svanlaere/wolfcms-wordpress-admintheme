@@ -12,7 +12,7 @@
 	margin: 0;
 	padding: 32px 0 0 160px;
 	display: table;
-	overflow:hidden;
+	overflow: auto;
 	position: relative;
 }
 #main #content-wrapper{
@@ -21,6 +21,7 @@
 	margin: 0;
 	padding: 10px 22px 15px 22px;
 	display: table-cell;
+	position: relative;
 	border: none;
 	background: none;
 	vertical-align: top;
@@ -149,6 +150,9 @@ ul#site-map li{
 }
 ul#site-map li{
 	position: static;
+}
+ul#site-map li.no-children{
+	height: 41px;
 }
 ul#site-map li div.content-children{
 	width: 100%;

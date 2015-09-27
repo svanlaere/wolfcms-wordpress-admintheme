@@ -202,6 +202,7 @@
 	border-bottom: 1px solid #f1f1f1;
 }
 .tabs .pages{
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	display: block;
@@ -210,6 +211,7 @@
 .tabs .pages .page{
 	margin: 15px 0;
 	padding: 0;
+	display: block;
 	background: transparent;
 }
 /* @end TAB NAVIGATION */
